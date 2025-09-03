@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plataforma Educativa</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpmITXzjiz7UNdktBOfgb8TxrhUASq9HUP3DtbIQz8-fYoE9WU00s-6EST8tfDlFaqIb5nKIZJ4qdolAp2_mbo9f2oymlhrH5u85WZY6kLXvWZHmK_gCOp_rTeTKMpCKmhCItfqZuAmYusaSPZMIHdh-yiAwjiIvOX_EL5E8WWtZXEXmpJXbCw_0oluFSL/s16000/logo%201.png" alt="Logo In-House 52" class="header-logo">
+      <h1>📚 Plataforma Educativa</h1>
+    </div>
+    <nav>
+      <a href="#" data-view="public">Inicio</a>
+      <a href="#" data-view="login">Colaboradores</a>
+      <a href="#" data-view="panel" class="only-auth hidden">Mi Panel</a>
+      <a href="#" id="logout" class="only-auth hidden">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="view-public" class="view">
+      <div class="hero-section">
+        <h2>🚀 Bienvenido a In-House 52</h2>
+        <p class="hero-subtitle">Agencia Interna de Comunicaciones del CGMLTI - SENA</p>
+      </div>
+
+      <!-- Sección de Misión con imagen al lado derecho -->
+      <div class="mission-section">
+        <div class="content-with-image mission-layout">
+          <div class="content-card mission-card">
+            <h3>🎯 Nuestra Misión</h3>
+            <p>Somos la agencia interna del Centro de Gestión de Mercados, Logística y Tecnologías de la Información (CGMLTI) del SENA. Nuestro propósito es generar soluciones de comunicación publicitaria innovadoras para todas las áreas del Centro, mientras formamos a las futuras generaciones de talentos creativos.</p>
+          </div>
+          <div class="companion-image large">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFEtJs9w8qPWiSpTfRhlxfSUNpPe70ReXfHvWB_0C83C4mMdHl-FQnvAhO6QEU54HDw7Fnv-xlWi0IJgX8663ltj_zgabrtF4DststNJy2GYnFuUtWeHZr0MIccqVRy5T7uzwZU-I4EdWrhLFWkwJybAm6eYmQ6Dl1X6ufOKNK3g21ysXYrledZFJvaOmi/s16000/IMG_3822.JPG" alt="Trabajo en equipo">
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen central destacada -->
+      <div class="hero-image-section">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFzqkzphBdvd0HEjwkXMFC-nho97W3cFEYiCbUBk3DbJuFc-5vJcKypeh_pMmEokuozn_qMdcj8bK6cML-VXO1Jwk1IbWLAbEUckWyb5PkIzCP0zLdJtHBWP04DDOI4re40Xz9V3PIm22ZlZXUNIimfu_Qj6Uu41ozOeHnInwuo-rrh7uCdZ_fvzkdrWIM/s16000/IMG_8103.JPG" 
+             alt="Equipo inHOUSE 52 trabajando" 
+             class="main-hero-image"/>
+      </div>
+
+      <!-- Sección de Visión con imagen al lado izquierdo -->
+      <div class="vision-section">
+        <div class="content-with-image vision-layout">
+          <div class="companion-image large">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiu0jvbxCgHHGjBkkDvDF48tWRER3Yq654I4DxehsRQmvFIJHRV-rS3mea04CQu5lRDqFcWlVVwdBI-sTI2a5DG5up871ykTcnke08ubTs40I03clbnGx_U5EORLHkz92z2F1YpiJ5eTn0cxKr1SEHTX9KQv88IuBTfia7psEjd7E9Jixpzje2IQL0jTe3F/s16000/IMG_8122.JPG" alt="Creatividad e innovación">
+          </div>
+          <div class="content-card vision-card">
+            <h3>🔮 Nuestra Visión</h3>
+            <p>Consolidarse como la agencia interna de comunicaciones publicitarias del SENA CGMLTI, que articula el talento de aprendices, instructores y pasantes en un espacio colaborativo de formación e innovación, reconocido por atender de manera eficiente y creativa los requerimientos de comunicación del Centro, fortaleciendo las competencias de los aprendices y proyectándose como referente institucional en estrategias de comunicación corporativa, publicidad y economía creativa.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-section">
+        <h3>💡 ¿Qué Hacemos?</h3>
+        <div class="services-grid">
+          <div class="service-item">
+            <h4>📱 Comunicación Digital</h4>
+            <p>Desarrollo de estrategias digitales y contenido multimedia para redes sociales y plataformas web.</p>
+          </div>
+          <div class="service-item">
+            <h4>🎨 Diseño Gráfico</h4>
+            <p>Creación de piezas gráficas, identidad visual y material publicitario para las diferentes áreas del Centro.</p>
+          </div>
+          <div class="service-item">
+            <h4>🎬 Producción Audiovisual</h4>
+            <p>Producción de videos educativos, promocionales y contenido multimedia de alta calidad.</p>
+          </div>
+          <div class="service-item">
+            <h4>🎯 Estrategias de Difusión</h4>
+            <p>Planificación y ejecución de campañas de comunicación efectivas para el CGMLTI.</p>
+          </div>
+          <div class="service-item">
+            <h4>💻 Desarrollo de Software</h4>
+            <p>Creación de aplicaciones web, sistemas de información y soluciones tecnológicas para el Centro.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="programs-section">
+        <h3>🎓 Programas Formativos</h3>
+        <div class="programs-list">
+          <div class="program-item">
+            <span class="program-icon">📢</span>
+            <div>
+              <h4>Tecnología en Comunicación Comercial</h4>
+              <p>Formación integral en estrategias de comunicación y marketing digital.</p>
+            </div>
+          </div>
+          <div class="program-item">
+            <span class="program-icon">🎮</span>
+            <div>
+              <h4>Producción de Multimedia</h4>
+              <p>Desarrollo de habilidades en creación de contenido multimedia interactivo.</p>
+            </div>
+          </div>
+          <div class="program-item">
+            <span class="program-icon">🎨</span>
+            <div>
+              <h4>Animación 3D</h4>
+              <p>Especialización en modelado, animación y renderizado tridimensional.</p>
+            </div>
+          </div>
+          <div class="program-item">
+            <span class="program-icon">💻</span>
+            <div>
+              <h4>Análisis y Desarrollo de Software</h4>
+              <p>Formación en programación, bases de datos y desarrollo de aplicaciones web y móviles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-showcase">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyl7tkG3sPP3wJu55w2TGsuV-Pv4eu31MxP0j0uqX4TTUuGI-kAj0CCUcaJqqW44NJB_WKfg7rgJyai3eNwzBK4sAXJ5qFiwo0Yy31z_-UtF5kvt93IUw382upKb_jsRQFzP6pYPUzY1zwkI3DX3pXuPEaX6xTNQlcgRvP9Aege-wTfLZRQ9JyE2LeQcf1/s16000/IMG_8118.JPG" 
+             alt="Proyectos realizados en inHOUSE 52" 
+             class="featured-image"/>
+      </div>
+
+      <div class="impact-section">
+        <h3>📈 Impacto y Beneficios</h3>
+        <div class="impact-grid">
+          <div class="impact-item">
+            <h4>🏢 Para el Centro</h4>
+            <p>Centralización y profesionalización de todas las comunicaciones del CGMLTI, mejorando la imagen institucional.</p>
+          </div>
+          <div class="impact-item">
+            <h4>👨‍🎓 Para los Aprendices</h4>
+            <p>Oportunidad única de etapa productiva, construcción de portafolio profesional y desarrollo de habilidades laborales.</p>
+          </div>
+          <div class="impact-item">
+            <h4>🤝 Para la Comunidad</h4>
+            <p>Mejor comunicación con coordinaciones académicas, biblioteca, bilingüismo y demás áreas del Centro.</p>
+          </div>
+          <div class="impact-item">
+            <h4>🚀 Para el Futuro</h4>
+            <p>Formación de profesionales preparados para el mundo laboral con experiencia práctica real.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galería de imágenes después de Impacto y Beneficios -->
+      <div class="gallery-section">
+        <h3>📸 Galería de Proyectos</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiG2qlnsOMw73VrcCDhok8rA8Ra8PFvwuGxDZuUCP3_EyuVU_zrXXviNaVOIY0qOGKQtpobpe3PL2WOg9XOB4xbPx7x6EFbysBOdvadtg_9LHvpPS6sB3b-p0kwn-u675J7jzCunwob5do7SIjyySNMWu_Lvv0yjXF2zREspyrsKY2q7Eko00eBF2SBj1k9/s16000/IMG_8105.JPG" alt="Proyecto colaborativo inHOUSE 52">
+          </div>
+          <div class="gallery-item">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnmYu7CpNYZDnh5N8rhVAGzt0iGHC0wKIrZyxASfYLNQ48jw0-HONVo7Z4RPNy7uQqQM9txGBhAF3irejT-c_gaBVtM1xyarKVW5Tkh-wpE0ZQbu8rnueEzMZWouNJTeT_XxdrdVXnYCWXgiAyfZ7nyxnpS-vQ-AuG9TyTiPqwLQI8vU7gE8Z45hK3bk3_/s16000/IMG_8137.JPG" alt="Equipo de trabajo inHOUSE 52">
+          </div>
+          <div class="gallery-item">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1IkkShazDu2NNfXXqpM3JBYdYw4RVw6HFDLm51F_sd1Ua7nrW7Iz1AS9FGICo2VLraSXuzk3rOKvuE7ZjuQQZmZA4GbeVJJ4YtY1jjwJYYmk74C_wFCzLF8SP-YDKwyQM2ZXfe5aDPaVvtKMbqZNJKEk1eVI7al47OrRfog3Luqy3TtDXNJY0WsB1jOBg/s16000/IMG_2315_16-02-24.jpeg" alt="Actividades inHOUSE 52">
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h3>🌟 Únete a Nuestro Equipo</h3>
+        <p>In-House 52 se ha consolidado como un espacio de innovación y aprendizaje, donde la teoría y la práctica se unen para crear un impacto real y significativo en la formación profesional.</p>
+        <div class="cta-buttons">
+          <button onclick="showView('login')" class="cta-button">Acceso Colaboradores</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-login" class="view hidden">
+      <div class="auth-container">
+        <div class="auth-header">
+          <h2>🔐 Acceso para Colaboradores</h2>
+          <p class="auth-subtitle">Ingresa a tu panel de trabajo en inHOUSE 52</p>
+        </div>
+
+        <div class="auth-tabs">
+          <button class="tab-button active" data-tab="login">Iniciar Sesión</button>
+          <button class="tab-button" data-tab="register">Registrarse</button>
+        </div>
+
+        <div class="tab-content" id="login-tab">
+          <div class="auth-card">
+            <h3>Bienvenido de vuelta</h3>
+            <p class="muted">Ingresa tus credenciales para acceder a tu panel</p>
+            <form id="form-login">
+              <div class="input-group">
+                <label for="login-username">👤 Usuario</label>
+                <input type="text" id="login-username" name="username" placeholder="Ingresa tu usuario" required />
+              </div>
+              <div class="input-group">
+                <label for="login-password">🔒 Contraseña</label>
+                <input type="password" id="login-password" name="password" placeholder="Ingresa tu contraseña" required />
+              </div>
+              <button type="submit" class="auth-button">Ingresar al Panel</button>
+            </form>
+            <div id="login-message" class="message hidden"></div>
+          </div>
+        </div>
+
+        <div class="tab-content hidden" id="register-tab">
+          <div class="auth-card">
+            <h3>Únete al equipo</h3>
+            <p class="muted">Crea tu cuenta como colaborador de inHOUSE 52</p>
+            <form id="form-register">
+              <div class="input-group">
+                <label for="register-username">👤 Usuario</label>
+                <input type="text" id="register-username" name="username" placeholder="Elige un nombre de usuario" required minlength="3" />
+                <small class="input-help">Mínimo 3 caracteres</small>
+              </div>
+              <div class="input-group">
+                <label for="register-email">📧 Correo Electrónico</label>
+                <input type="email" id="register-email" name="email" placeholder="tu.email@sena.edu.co" required />
+                <small class="input-help">Usa tu correo institucional del SENA</small>
+              </div>
+              <div class="input-group">
+                <label for="register-password">🔒 Contraseña</label>
+                <input type="password" id="register-password" name="password" placeholder="Crea una contraseña segura" required minlength="6" />
+                <small class="input-help">Mínimo 6 caracteres</small>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="terms" required />
+                <label for="terms">Acepto los términos y condiciones de uso de la plataforma</label>
+              </div>
+              <button type="submit" class="auth-button">Crear Cuenta</button>
+            </form>
+            <div id="register-message" class="message hidden"></div>
+          </div>
+        </div>
+
+        <div class="auth-info">
+          <div class="info-box">
+            <h4>ℹ️ Información Importante</h4>
+            <ul>
+              <li>Solo colaboradores autorizados pueden registrarse</li>
+              <li>Tu cuenta será revisada antes de la activación</li>
+              <li>Usa tu correo institucional del SENA</li>
+              <li>Mantén seguras tus credenciales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-panel" class="view hidden">
+      <div class="panel-container">
+        <div class="panel-header">
+          <div class="user-info">
+            <h2 id="panel-title">Panel de Control</h2>
+            <p id="role-info" class="role-badge"></p>
+          </div>
+          <div class="panel-stats">
+            <div class="stat-item">
+              <span class="stat-number" id="content-count">0</span>
+              <span class="stat-label">Archivos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="storage-used">0 MB</span>
+              <span class="stat-label">Almacenamiento</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-tabs">
+          <button class="panel-tab-button active" data-panel-tab="upload">📤 Subir Contenido</button>
+          <button class="panel-tab-button" data-panel-tab="my-content">📁 Mi Contenido</button>
+          <button class="panel-tab-button hidden" id="admin-tab" data-panel-tab="admin">👑 Administración</button>
+        </div>
+
+        <div class="panel-tab-content" id="upload-tab">
+          <div class="upload-card">
+            <h3>📤 Subir Nuevo Contenido</h3>
+            <p class="muted">Comparte imágenes, videos y archivos con el equipo de inHOUSE 52</p>
+            
+            <form id="form-upload" class="upload-form">
+              <div class="form-row">
+                <div class="input-group">
+                  <label for="upload-title">📝 Título</label>
+                  <input type="text" id="upload-title" name="title" placeholder="Nombre descriptivo del archivo" required />
+                </div>
+                <div class="input-group">
+                  <label for="upload-type">📂 Tipo de Contenido</label>
+                  <select id="upload-type" name="type" required>
+                    <option value="" disabled selected>Selecciona el tipo</option>
+                    <option value="image">🖼️ Imagen</option>
+                    <option value="video">🎬 Video</option>
+                    <option value="file">📄 Documento/Archivo</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="input-group">
+                <label for="upload-description">📋 Descripción</label>
+                <textarea id="upload-description" name="description" placeholder="Describe el contenido, su propósito o contexto..." rows="3"></textarea>
+              </div>
+              
+              <div class="file-upload-area">
+                <input type="file" id="file" name="file" required accept="image/*,video/*,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt" />
+                <label for="file" class="file-upload-label">
+                  <div class="upload-icon">📁</div>
+                  <div class="upload-text">
+                    <strong>Haz clic para seleccionar archivo</strong>
+                    <span>o arrastra y suelta aquí</span>
+                  </div>
+                </label>
+                <div id="file-preview" class="file-preview hidden"></div>
+              </div>
+              
+              <button type="submit" class="upload-button">🚀 Subir Contenido</button>
+            </form>
+            
+            <div id="upload-message" class="message hidden"></div>
+          </div>
+        </div>
+
+        <div class="panel-tab-content hidden" id="my-content-tab">
+          <div class="content-header">
+            <h3>📁 Mi Contenido</h3>
+            <div class="content-filters">
+              <select id="content-filter">
+                <option value="all">Todos los archivos</option>
+                <option value="image">🖼️ Imágenes</option>
+                <option value="video">🎬 Videos</option>
+                <option value="file">📄 Documentos</option>
+              </select>
+            </div>
+          </div>
+          <div id="my-content-grid" class="content-grid"></div>
+        </div>
+
+        <div class="panel-tab-content hidden" id="admin-tab">
+          <div class="admin-panel">
+            <h3>👑 Panel de Administración</h3>
+            <p class="muted">Gestiona todo el contenido de la plataforma</p>
+            
+            <div class="admin-stats">
+              <div class="admin-stat-card">
+                <h4>📊 Estadísticas Generales</h4>
+                <div class="stat-grid">
+                  <div class="stat-item">
+                    <span class="stat-number" id="total-users">0</span>
+                    <span class="stat-label">Usuarios</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number" id="total-content">0</span>
+                    <span class="stat-label">Archivos Totales</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number" id="total-storage">0 MB</span>
+                    <span class="stat-label">Almacenamiento Total</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="content-header">
+              <h4>🗂️ Todo el Contenido</h4>
+              <div class="content-filters">
+                <select id="admin-content-filter">
+                  <option value="all">Todos los archivos</option>
+                  <option value="image">🖼️ Imágenes</option>
+                  <option value="video">🎬 Videos</option>
+                  <option value="file">📄 Documentos</option>
+                </select>
+              </div>
+            </div>
+            <div id="all-content-grid" class="content-grid admin-content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Plataforma Educativa</small>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

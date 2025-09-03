@@ -1,0 +1,230 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@inhouse52.com",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "admin",
+      "created_at": "2025-09-02T12:36:04.226026"
+    },
+    {
+      "id": 2,
+      "username": "Geral",
+      "email": "geraldine_basto@outlook.com",
+      "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+      "role": "collaborator",
+      "created_at": "2025-09-02T12:36:04.226108"
+    },
+    {
+      "id": 3,
+      "username": "Geral123",
+      "email": "geraldinebastosilva@gmail.com",
+      "password": "0fb292cabe2968dc46b24c00cbd0df0a710f1694617c9d636364b88e6e755947",
+      "role": "collaborator",
+      "created_at": "2025-09-02T12:37:17.533194"
+    },
+    {
+      "id": 4,
+      "username": "Pruebas",
+      "email": "pruebas@hotmail.com",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "role": "collaborator",
+      "created_at": "2025-09-03T10:15:42.377277"
+    }
+  ],
+  "content": [
+    {
+      "id": 1,
+      "title": "Imgenes ",
+      "description": "Imagen de pruebas ",
+      "type": "image",
+      "path": "/uploads/e7769581-e2a8-4be8-bba1-520cc951316e.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 3,
+      "created_at": "2025-09-02T12:40:30.056643"
+    },
+    {
+      "id": 2,
+      "title": "Imgenes ",
+      "description": "Imagen de pruebas ",
+      "type": "image",
+      "path": "/uploads/b205fe04-0099-47ad-b0e3-c2aa882c75af.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 3,
+      "created_at": "2025-09-02T12:40:32.719239"
+    },
+    {
+      "id": 3,
+      "title": "Imgenes ",
+      "description": "Imagen de pruebas ",
+      "type": "image",
+      "path": "/uploads/cd309c9b-7c81-44e9-912f-5d4bdb2336d9.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 3,
+      "created_at": "2025-09-02T12:41:24.875270"
+    },
+    {
+      "id": 4,
+      "title": "Imgenes ",
+      "description": "Imagen de pruebas ",
+      "type": "image",
+      "path": "/uploads/b31af375-5903-4f22-8ac0-68c37e593060.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 2,
+      "created_at": "2025-09-02T12:58:51.839055"
+    },
+    {
+      "id": 5,
+      "title": "Test File",
+      "description": "Archivo de prueba",
+      "type": "image",
+      "path": "/uploads/f16db906-f1ec-4dcb-a9f3-cd5bf48ef8ff.png",
+      "original_filename": "logo 1.png",
+      "owner_id": 1,
+      "created_at": "2025-09-03T10:03:06.229816"
+    },
+    {
+      "id": 6,
+      "title": "Logo",
+      "description": "logo de in-house",
+      "type": "image",
+      "path": "/uploads/f968387e-5f23-44c3-97ae-bd2e6b1bdc25.png",
+      "original_filename": "logo 1.png",
+      "owner_id": 1,
+      "created_at": "2025-09-03T10:04:30.830894"
+    },
+    {
+      "id": 7,
+      "title": "pruebas",
+      "description": "pruebas",
+      "type": "image",
+      "path": "/uploads/7213768a-7104-4616-be69-047db97b9f91.png",
+      "original_filename": "logo 1.png",
+      "owner_id": 1,
+      "created_at": "2025-09-03T10:06:22.995271"
+    },
+    {
+      "id": 8,
+      "title": "pruebas",
+      "description": "pruebas",
+      "type": "image",
+      "path": "/uploads/8e94d80a-25e7-4557-af84-60e9146cf281.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 1,
+      "created_at": "2025-09-03T10:06:52.058901"
+    },
+    {
+      "id": 9,
+      "title": "pruebas",
+      "description": "pruebas",
+      "type": "image",
+      "path": "/uploads/280a4ec5-63ba-4cac-9cc6-f4b9fd2ee531.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 1,
+      "created_at": "2025-09-03T10:08:53.382768"
+    },
+    {
+      "id": 10,
+      "title": "pruebas",
+      "description": "pruebas",
+      "type": "image",
+      "path": "/uploads/d0f75d78-356c-48d6-8563-27e2a8e0dbb6.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 4,
+      "created_at": "2025-09-03T11:09:37.289901"
+    },
+    {
+      "id": 11,
+      "title": "pruebas",
+      "description": "pruebas",
+      "type": "image",
+      "path": "/uploads/f4f1bad0-2ee9-47b4-a7e5-a789b7150017.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 4,
+      "created_at": "2025-09-03T11:11:29.976487"
+    },
+    {
+      "id": 12,
+      "title": "pruebas",
+      "description": "pruebas",
+      "type": "image",
+      "path": "/uploads/911c185d-695c-44d8-8558-bc58489b4f4d.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 4,
+      "created_at": "2025-09-03T11:12:35.325130"
+    },
+    {
+      "id": 13,
+      "title": "pruebas",
+      "description": "pruebas ",
+      "type": "image",
+      "path": "/uploads/e016f0c8-f532-4608-ae72-bef9b6a5504d.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 4,
+      "created_at": "2025-09-03T11:17:16.734148"
+    },
+    {
+      "id": 14,
+      "title": "123",
+      "description": "123",
+      "type": "image",
+      "path": "/uploads/c8acf731-9daa-409c-b870-1ec1709e31a1.png",
+      "original_filename": "Técnico en Integración de Operaciones Logísticas.png",
+      "owner_id": 4,
+      "created_at": "2025-09-03T11:25:54.522489"
+    },
+    {
+      "id": 15,
+      "title": "123",
+      "description": "123",
+      "type": "image",
+      "path": "/uploads/387194a1-30e9-4550-9bb5-e1b67a936969.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 4,
+      "created_at": "2025-09-03T11:27:23.969089"
+    },
+    {
+      "id": 16,
+      "title": "pruebas",
+      "description": "pruebas",
+      "type": "image",
+      "path": "/uploads/b598dd22-0ab1-46d0-a774-334f64ad9d9d.png",
+      "original_filename": "Técnico en Operaciones Logísticas en Centros de Distribución.png",
+      "owner_id": 4,
+      "created_at": "2025-09-03T11:37:30.928376"
+    },
+    {
+      "id": 17,
+      "title": "preubas",
+      "description": "123",
+      "type": "image",
+      "path": "/uploads/601e79f2-a5f4-4a58-9217-09951274b5ea.jpg",
+      "original_filename": "2.jpg",
+      "owner_id": 4,
+      "created_at": "2025-09-03T11:39:39.941969"
+    },
+    {
+      "id": 18,
+      "title": "23",
+      "description": "RQ23",
+      "type": "image",
+      "path": "/uploads/a9b2a4f3-ef5e-49bc-b5ae-cbfaf4531655.png",
+      "original_filename": "Técnico en Venta de Productos en Línea.png",
+      "owner_id": 4,
+      "created_at": "2025-09-03T12:29:25.319923"
+    },
+    {
+      "id": 19,
+      "title": "RQ1",
+      "description": "RQ1",
+      "type": "image",
+      "path": "/uploads/db67847b-f5e8-4e20-b3ed-4adfc8983e94.png",
+      "original_filename": "logo 1.png",
+      "owner_id": 4,
+      "created_at": "2025-09-03T12:33:56.728615"
+    }
+  ],
+  "next_user_id": 5,
+  "next_content_id": 20
+}

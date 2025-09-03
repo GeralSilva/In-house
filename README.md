@@ -43,7 +43,7 @@ Plataforma web educativa para la gestión de contenido multimedia del Centro de 
 
 4. **Abrir la aplicación**
    - Abre tu navegador web
-   - Navega a: `http://127.0.0.1:8000`
+   - Navega a: `https://geralsilva.github.io/In-house/`
    - O simplemente abre el archivo `index.html` en tu navegador
 
 ## 🔐 Credenciales por Defecto

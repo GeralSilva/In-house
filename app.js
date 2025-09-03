@@ -3,7 +3,7 @@
 // ============================================
 
 // URL base de la API del servidor backend
-const API = "http://127.0.0.1:8001";
+const API = "https://geralsilva.github.io/In-house/";
 
 // Referencias a las diferentes vistas/secciones de la aplicación
 const views = {

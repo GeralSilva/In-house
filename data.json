@@ -31,6 +31,14 @@
       "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
       "role": "collaborator",
       "created_at": "2025-09-03T10:15:42.377277"
+    },
+    {
+      "id": 5,
+      "username": "Geral Silva",
+      "email": "geraldine_12@gmail.com",
+      "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+      "role": "collaborator",
+      "created_at": "2025-09-08T08:27:49.588204"
     }
   ],
   "content": [
@@ -223,8 +231,18 @@
       "original_filename": "logo 1.png",
       "owner_id": 4,
       "created_at": "2025-09-03T12:33:56.728615"
+    },
+    {
+      "id": 20,
+      "title": "pruebas ",
+      "description": "pruebas 2",
+      "type": "image",
+      "path": "/uploads/3c5d5487-d635-4968-bd58-a67419bc6c0d.jpeg",
+      "original_filename": "IMG_2315_16-02-24.jpeg",
+      "owner_id": 5,
+      "created_at": "2025-09-08T08:28:43.623937"
     }
   ],
-  "next_user_id": 5,
-  "next_content_id": 20
+  "next_user_id": 6,
+  "next_content_id": 21
 }

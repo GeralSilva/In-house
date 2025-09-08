@@ -3,7 +3,7 @@
 // ============================================
 
 // URL base de la API del servidor backend
-const API = "https://geralsilva.github.io/In-house/";
+const API = "http://127.0.0.1:8001";
 
 // Referencias a las diferentes vistas/secciones de la aplicación
 const views = {
@@ -786,6 +786,52 @@ document.querySelectorAll('a[data-view]').forEach(a => {
     e.preventDefault();  // Prevenir comportamiento por defecto del enlace
     const v = a.dataset.view;  // Obtener vista del atributo data-view
     showView(v);  // Mostrar la vista correspondiente
+  });
+});
+
+// ============================================
+// FUNCIONES DE NAVEGACIÓN DEL EQUIPO
+// ============================================
+
+/**
+ * Navega a la página de perfil de un miembro del equipo
+ * @param {string} memberName - Nombre del miembro del equipo (formato: nombre-apellido)
+ */
+function navigateToTeamMember(memberName) {
+  // Crear la URL de la página del miembro del equipo en la carpeta perfil-colaboradores
+  const memberUrl = `perfil-colaboradores/${memberName}.html`;
+  
+  // Redirigir a la página del miembro
+  window.location.href = memberUrl;
+}
+
+/**
+ * Función para manejar el scroll suave a la sección del equipo
+ * @param {string} sectionId - ID de la sección a la que hacer scroll
+ */
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+}
+
+// Agregar event listeners para navegación suave en enlaces del equipo
+document.addEventListener('DOMContentLoaded', function() {
+  // Manejar clicks en enlaces que van a secciones específicas
+  const sectionLinks = document.querySelectorAll('a[href^="#"]');
+  sectionLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href.startsWith('#') && href.length > 1) {
+        e.preventDefault();
+        const sectionId = href.substring(1);
+        scrollToSection(sectionId);
+      }
+    });
   });
 });
 

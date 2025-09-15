@@ -116,7 +116,7 @@ async function init() {
       // Cambiar automáticamente a la vista de inicio
       showView("public");
       // Renderizar el panel de usuario (prepararlo para cuando lo necesite)
-      await renderPanel();
+      // await renderPanel(); // Comentado temporalmente para evitar errores
     }
   }
 }
@@ -369,18 +369,30 @@ async function renderPanel() {
   const roleInfo = document.getElementById("role-info");
   
   // Mostrar elementos que solo son visibles para usuarios autenticados
-  onlyAuth.forEach(el => el.classList.remove("hidden"));
+  if (onlyAuth && onlyAuth.length > 0) {
+    onlyAuth.forEach(el => {
+      if (el) {
+        el.classList.remove("hidden");
+      }
+    });
+  }
 
   // Personalizar título y mostrar información del usuario
-  panelTitle.textContent = "Panel de " + currentUser.username;
-  roleInfo.textContent = "Tu rol: " + currentUser.role;
+  if (panelTitle) {
+    panelTitle.textContent = "Panel de " + currentUser.username;
+  }
+  if (roleInfo) {
+    roleInfo.textContent = "Tu rol: " + currentUser.role;
+  }
 
   // Mostrar pestaña de administración solo si el usuario es admin
   const adminTab = document.querySelector('[data-tab="admin"]');
-  if (currentUser.role === "admin") {
-    adminTab.style.display = "block";
-  } else {
-    adminTab.style.display = "none";
+  if (adminTab) {
+    if (currentUser.role === "admin") {
+      adminTab.style.display = "block";
+    } else {
+      adminTab.style.display = "none";
+    }
   }
 
   // Inicializar sistema de pestañas del panel

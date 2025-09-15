@@ -205,17 +205,17 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .companion-image img {
     width: 100%;
-    height: 320px;
+    height: 400px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -481,119 +481,296 @@
         margin: 0;
     }
 
-    /* --- SECCIÓN DEL EQUIPO --- */
+    /* --- SECCIÓN DEL EQUIPO - FICHAS PANINI SENA --- */
     .team-section {
         padding: 80px 0;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #39A900 0%, #1e5799 100%);
         color: white;
         margin: 60px 0;
         border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .team-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="panini-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23panini-pattern)"/></svg>') repeat;
+        opacity: 0.3;
     }
 
     .team-section h3 {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 2.8rem;
         color: white;
         font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        position: relative;
+        z-index: 2;
     }
 
     .team-subtitle {
         text-align: center;
         margin-bottom: 60px;
-        font-size: 1.2rem;
-        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 0.95);
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+        font-weight: 600;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        position: relative;
+        z-index: 2;
     }
 
-    .team-grid {
+    .panini-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 40px;
-        max-width: 1200px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        max-width: 100%;
         margin: 0 auto;
         padding: 0 20px;
+        position: relative;
+        z-index: 2;
+        justify-content: space-evenly;
+        align-content: start;
     }
 
-    .team-card {
+    .panini-card {
         background: white;
-        border-radius: 20px;
+        border-radius: 15px;
         overflow: hidden;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         cursor: pointer;
         position: relative;
+        aspect-ratio: 2/3;
+        border: 3px solid transparent;
     }
 
-    .team-card:hover {
-        transform: translateY(-15px) scale(1.02);
-        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    .panini-card[onclick] {
+        cursor: pointer;
     }
 
-    .team-card-image {
+    .panini-card[onclick]:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .panini-card.panini-green {
+        border-color: #39A900;
+        background: linear-gradient(145deg, #ffffff 0%, #f8fff8 100%);
+    }
+
+    .panini-card.panini-blue {
+        border-color: #1e5799;
+        background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+    }
+
+    .panini-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .panini-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: white;
         position: relative;
-        height: 200px;
-        overflow: hidden;
-        background: linear-gradient(45deg, #667eea, #764ba2);
     }
 
-    .team-card-image img {
+    .panini-green .panini-header {
+        background: linear-gradient(135deg, #39A900 0%, #2d7a00 100%);
+    }
+
+    .panini-blue .panini-header {
+        background: linear-gradient(135deg, #1e5799 0%, #164570 100%);
+    }
+
+    .panini-number {
+        font-size: 0.9rem;
+        font-weight: 900;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .panini-logo {
+        font-size: 0.8rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .panini-photo {
+        height: 140px;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    }
+
+    .panini-photo img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.4s ease;
+        transition: transform 0.3s ease;
     }
 
-    .team-card:hover .team-card-image img {
+    .panini-card:hover .panini-photo img {
         transform: scale(1.1);
     }
 
-    .team-card-content {
-        padding: 30px 25px;
+    .placeholder-photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 3rem;
+        color: #ccc;
+        background: linear-gradient(45deg, #f8f8f8, #e8e8e8);
+    }
+
+    /* Estilos para el contenedor de foto simplificado */
+    .panini-photo-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #f8f8f8, #e8e8e8);
+        border: 2px dashed #ccc;
+        border-radius: 10px;
+        font-size: 2rem;
+        color: #999;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .panini-photo-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 8px;
+    }
+
+    .panini-photo-container::before {
+        content: "📸";
+        font-size: 3rem;
+        opacity: 0.5;
+    }
+
+    .panini-photo-container:has(img)::before {
+        display: none;
+    }
+
+    .panini-photo-container:hover {
+        border-color: #39A900;
+        background: linear-gradient(45deg, #f0fff0, #e8f8e8);
+    }
+
+    .panini-blue .panini-photo-container:hover {
+        border-color: #1e5799;
+        background: linear-gradient(45deg, #f0f8ff, #e8f0ff);
+    }
+
+    .panini-info {
+        padding: 12px 10px 8px;
         text-align: center;
         color: #2c3e50;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    .team-card-content h4 {
-        font-size: 1.4rem;
-        font-weight: 700;
-        margin-bottom: 8px;
+    .panini-info h4 {
+        font-size: 0.9rem;
+        font-weight: 800;
+        margin-bottom: 4px;
         color: #2c3e50;
-    }
-
-    .team-role {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #667eea;
-        margin-bottom: 15px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        line-height: 1.1;
     }
 
-    .team-description {
-        font-size: 0.95rem;
-        line-height: 1.6;
+    .panini-role {
+        font-size: 0.7rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        line-height: 1;
+    }
+
+    .panini-green .panini-role {
+        color: #39A900;
+    }
+
+    .panini-blue .panini-role {
+        color: #1e5799;
+    }
+
+    .panini-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .stat {
+        font-size: 0.65rem;
         color: #6c757d;
-        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    /* Efecto de brillo en hover */
-    .team-card::before {
+    .stat span {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .panini-collection-info {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        position: relative;
+        z-index: 2;
+    }
+
+    .panini-collection-info p {
+        margin: 8px 0;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Efecto de brillo en hover para fichas Panini */
+    .panini-card::before {
         content: '';
         position: absolute;
         top: 0;
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
         transition: left 0.5s;
+        z-index: 1;
     }
 
-    .team-card:hover::before {
-         left: 100%;
-     }
+    .panini-card:hover::before {
+        left: 100%;
+    }
 
      /* --- PÁGINAS DE PERFIL DEL EQUIPO --- */
      .team-profile-section {
@@ -1628,7 +1805,7 @@
             font-size: 2.2rem;
         }
         
-        /* Responsivo para sección del equipo */
+        /* Responsivo para sección del equipo - Fichas Panini */
         .team-section {
             padding: 60px 0;
             margin: 40px 0;
@@ -1645,39 +1822,66 @@
             padding: 0 20px;
         }
         
-        .team-grid {
-            grid-template-columns: 1fr;
-            gap: 25px;
-            padding: 0 20px;
+        .panini-grid {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 0 15px;
         }
         
-        .team-card {
-            margin: 0 auto;
-            max-width: 320px;
+        .panini-card {
+            margin-bottom: 15px;
         }
         
-        .team-card:hover {
-            transform: translateY(-8px) scale(1.01);
+        .panini-card:hover {
+            transform: translateY(-8px) scale(1.03);
         }
         
-        .team-card-image {
-            height: 180px;
+        .panini-header {
+            padding: 6px 10px;
+            font-size: 0.7rem;
         }
         
-        .team-card-content {
-            padding: 25px 20px;
+        .panini-number {
+            font-size: 0.8rem;
         }
         
-        .team-card-content h4 {
-            font-size: 1.3rem;
+        .panini-logo {
+            font-size: 0.7rem;
         }
         
-        .team-role {
+        .panini-photo {
+            height: 120px;
+        }
+        
+        .panini-info {
+            padding: 10px 8px 6px;
+        }
+        
+        .panini-info h4 {
+            font-size: 0.8rem;
+            margin-bottom: 3px;
+        }
+        
+        .panini-role {
+            font-size: 0.65rem;
+            margin-bottom: 6px;
+        }
+        
+        .stat {
+            font-size: 0.6rem;
+        }
+        
+        .panini-collection-info {
+            margin-top: 30px;
+            padding: 15px;
+        }
+        
+        .panini-collection-info p {
             font-size: 0.9rem;
         }
         
-        .team-description {
-            font-size: 0.9rem;
+        .placeholder-photo {
+            font-size: 2.5rem;
         }
         
         /* Responsivo para páginas de perfil */

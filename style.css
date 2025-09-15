@@ -1734,6 +1734,21 @@
             gap: 20px;
         }
         
+        /* Fichas Panini para móviles */
+        .panini-grid {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 0 10px;
+        }
+        
+        .team-section {
+            padding: 25px 15px;
+        }
+        
+        .team-section h3 {
+            font-size: 1.6rem;
+        }
+        
         .program-item {
             flex-direction: column;
             text-align: center;
@@ -1771,6 +1786,21 @@
         }
         
         .gallery-section h3 {
+            font-size: 1.8rem;
+        }
+        
+        /* Fichas Panini responsivas */
+        .panini-grid {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            padding: 0 15px;
+        }
+        
+        .team-section {
+            padding: 30px 20px;
+        }
+        
+        .team-section h3 {
             font-size: 1.8rem;
         }
     }
